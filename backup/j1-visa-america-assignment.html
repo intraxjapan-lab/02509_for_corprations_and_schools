@@ -10,7 +10,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="../assets/images/intrax-logo.png" alt="Intrax">
+                <img src="assets/images/intrax-logo.png" alt="Intrax">
             </div>
             <nav class="global-nav">
                 <ul>
@@ -19,11 +19,22 @@
                     <li><a href="../company/">Company</a></li>
                     <li><a href="../recruit/">Recruit</a></li>
                     <li><a href="../j1-visa/">J1 Visa / Corporate Clients</a></li>
-                    <li><a href="../contact/">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <nav class="sub-nav">
+        <div class="container">
+            <ul class="sub-nav-list">
+                <li><a href="america-work-experience-programs.html">就業体験プログラム</a></li>
+                <li><a href="j1-visa-america-assignment.html" class="active">J1ビザでアメリカ駐在</a></li>
+                <li><a href="j1-visa-corporate-benefits.html">米国駐在・福利厚生</a></li>
+                <li><a href="j1-welfare-benefits.html">福利厚生活用</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
         <section class="hero">
@@ -125,7 +136,7 @@
                 <p>J1ビザを活用したアメリカ駐在プログラムについて詳しくお知りになりたい方は、お気軽にお問い合わせください。</p>
                 <div class="contact-info">
                     <p>電話: 03-3434-2729</p>
-                    <a href="../contact/" class="btn btn-primary">お問い合わせフォーム</a>
+                    <a href="contact.html" class="btn btn-primary">お問い合わせフォーム</a>
                 </div>
             </div>
         </section>
@@ -135,7 +146,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="../assets/images/intrax-logo.png" alt="Intrax">
+                    <img src="assets/images/intrax-logo.png" alt="Intrax">
                 </div>
                 <div class="footer-info">
                     <p>〒105-0022 東京都港区海岸1-9-11マリンクスタワー7F</p>
@@ -209,11 +220,152 @@
         }
 
         .global-nav a:hover {
-            color: #007bff;
+            color: #1e4a72;
+        }
+        .sub-nav {
+            position: relative;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-left: none;
+            border-right: none;
+            padding: 1rem 0;
+            box-shadow: 
+                0 8px 32px rgba(0,0,0,0.1),
+                inset 0 1px 0 rgba(255,255,255,0.2);
+        }
+        .sub-nav::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                rgba(30,74,114,0.05) 0%, 
+                rgba(44,85,48,0.05) 50%, 
+                rgba(30,74,114,0.05) 100%);
+            pointer-events: none;
+        }
+        .sub-nav-list {
+            display: flex;
+            list-style: none;
+            gap: 0.5rem;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+        .sub-nav-list a {
+            position: relative;
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 16px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255,255,255,0.8);
+            border: 1px solid rgba(255,255,255,0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 
+                0 4px 16px rgba(0,0,0,0.1),
+                inset 0 1px 0 rgba(255,255,255,0.6);
+            transform: translateY(0);
+            overflow: hidden;
+        }
+        .sub-nav-list a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(255,255,255,0.4), 
+                transparent);
+            transition: left 0.6s;
+        }
+        .sub-nav-list a:hover {
+            color: #1e4a72;
+            transform: translateY(-2px);
+            box-shadow: 
+                0 8px 25px rgba(30,74,114,0.25),
+                0 3px 10px rgba(0,0,0,0.1),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            background: rgba(255,255,255,0.95);
+            border-color: rgba(30,74,114,0.2);
+        }
+        .sub-nav-list a:hover::before {
+            left: 100%;
+        }
+        .sub-nav-list a.active {
+            color: #fff;
+            background: linear-gradient(135deg, #1e4a72 0%, #2c5530 100%);
+            border: 1px solid rgba(255,255,255,0.2);
+            box-shadow: 
+                0 8px 25px rgba(30,74,114,0.4),
+                0 3px 10px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.3);
+            transform: translateY(-1px);
+        }
+        .sub-nav-list a.active::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, 
+                rgba(255,255,255,0.1) 0%, 
+                rgba(255,255,255,0.05) 100%);
+            pointer-events: none;
+        }
+        
+        @media (max-width: 768px) {
+            .sub-nav {
+                padding: 0.75rem 1rem;
+            }
+            .sub-nav-list {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            .sub-nav-list a {
+                font-size: 0.875rem;
+                padding: 0.625rem 1rem;
+                border-radius: 12px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .sub-nav-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+            .sub-nav-list a {
+                width: calc(100% - 2rem);
+                max-width: 280px;
+                text-align: center;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .sub-nav-list a {
+                transition: none;
+            }
+            .sub-nav-list a::before {
+                transition: none;
+            }
         }
 
         .hero {
-            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            background: linear-gradient(135deg, #1e4a72 0%, #2c5530 100%);
             color: white;
             padding: 4rem 0;
             text-align: center;
@@ -247,7 +399,7 @@
             font-size: 1.8rem;
             margin-bottom: 2rem;
             text-align: center;
-            color: #28a745;
+            color: #1e4a72;
         }
 
         .fields-grid {
@@ -259,10 +411,9 @@
         .field-item {
             background: #e8f5e8;
             padding: 1rem;
-            border-radius: 8px;
             text-align: center;
             font-weight: 500;
-            border-left: 4px solid #28a745;
+            border-left: 4px solid #2c5530;
         }
 
         .company-examples {
@@ -274,7 +425,7 @@
             font-size: 1.8rem;
             margin-bottom: 2rem;
             text-align: center;
-            color: #28a745;
+            color: #1e4a72;
         }
 
         .companies-list ul {
@@ -301,7 +452,7 @@
             font-size: 1.8rem;
             margin-bottom: 2rem;
             text-align: center;
-            color: #28a745;
+            color: #1e4a72;
         }
 
         .links-grid {
@@ -343,7 +494,7 @@
             font-size: 1.8rem;
             margin-bottom: 2rem;
             text-align: center;
-            color: #28a745;
+            color: #1e4a72;
         }
 
         .benefits-grid {
@@ -374,7 +525,7 @@
         .contact-cta h2 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
-            color: #28a745;
+            color: #1e4a72;
         }
 
         .contact-info {
@@ -396,16 +547,16 @@
         }
 
         .btn-primary {
-            background: #28a745;
+            background: #1e4a72;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #1e7e34;
+            background: #2c5530;
         }
 
         footer {
-            background: #333;
+            background: #1e4a72;
             color: white;
             padding: 2rem 0 1rem;
         }
