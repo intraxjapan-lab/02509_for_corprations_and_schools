@@ -1,1 +1,4 @@
 .vercel
+
+# Ignore nextjs directory
+intrax-nextjs_不要/

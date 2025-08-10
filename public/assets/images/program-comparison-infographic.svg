@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <linearGradient id="internGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20c997;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aupairGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fd7e14;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="worktravelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6f42c1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#007bff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" fill="#333" font-size="28" font-weight="bold">J-1プログラム比較</text>
+  <text x="500" y="65" text-anchor="middle" fill="#666" font-size="16">あなたに最適なプログラムを見つけましょう</text>
+  
+  <!-- Internship/Trainee Card -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="280" height="520" fill="white" stroke="#28a745" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="280" height="60" fill="url(#internGradient)" rx="12"/>
+    <rect x="0" y="48" width="280" height="12" fill="url(#internGradient)"/>
+    
+    <text x="140" y="35" text-anchor="middle" fill="white" font-size="18" font-weight="bold">インターン・トレーニー</text>
+    
+    <!-- Icon -->
+    <g transform="translate(140, 90)">
+      <rect x="-25" y="-15" width="50" height="30" fill="#28a745" rx="4"/>
+      <rect x="-20" y="-10" width="40" height="4" fill="white"/>
+      <rect x="-20" y="-4" width="30" height="3" fill="white"/>
+      <rect x="-20" y="1" width="35" height="3" fill="white"/>
+      <rect x="-20" y="6" width="25" height="3" fill="white"/>
+    </g>
+    
+    <!-- Details -->
+    <g transform="translate(20, 140)">
+      <text x="0" y="20" fill="#333" font-size="14" font-weight="bold">対象者</text>
+      <text x="0" y="35" fill="#666" font-size="12">• 大学生・大学院生</text>
+      <text x="0" y="48" fill="#666" font-size="12">• 社会人経験者</text>
+      
+      <text x="0" y="75" fill="#333" font-size="14" font-weight="bold">期間</text>
+      <text x="0" y="90" fill="#666" font-size="12">最長18ヶ月</text>
+      
+      <text x="0" y="115" fill="#333" font-size="14" font-weight="bold">内容</text>
+      <text x="0" y="130" fill="#666" font-size="12">• 企業での実務経験</text>
+      <text x="0" y="143" fill="#666" font-size="12">• 専門分野でのトレーニング</text>
+      <text x="0" y="156" fill="#666" font-size="12">• ビジネスネットワーク構築</text>
+      
+      <text x="0" y="185" fill="#333" font-size="14" font-weight="bold">メリット</text>
+      <text x="0" y="200" fill="#666" font-size="12">• 国際的な職業経験</text>
+      <text x="0" y="213" fill="#666" font-size="12">• キャリアアップ</text>
+      <text x="0" y="226" fill="#666" font-size="12">• グローバルスキル習得</text>
+      
+      <text x="0" y="255" fill="#333" font-size="14" font-weight="bold">費用</text>
+      <text x="0" y="270" fill="#666" font-size="12">プログラム費用</text>
+      <text x="0" y="283" fill="#666" font-size="12">滞在費・生活費</text>
+      
+      <text x="0" y="310" fill="#333" font-size="14" font-weight="bold">企業例</text>
+      <text x="0" y="325" fill="#666" font-size="11">トヨタ紡織、日本通運</text>
+      <text x="0" y="338" fill="#666" font-size="11">森永製菓、京セラ</text>
+      <text x="0" y="351" fill="#666" font-size="11">ダイキン工業　他</text>
+    </g>
+  </g>
+  
+  <!-- Au Pair Card -->
+  <g transform="translate(360, 100)">
+    <rect x="0" y="0" width="280" height="520" fill="white" stroke="#dc3545" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="280" height="60" fill="url(#aupairGradient)" rx="12"/>
+    <rect x="0" y="48" width="280" height="12" fill="url(#aupairGradient)"/>
+    
+    <text x="140" y="35" text-anchor="middle" fill="white" font-size="18" font-weight="bold">オペアケア</text>
+    
+    <!-- Icon -->
+    <g transform="translate(140, 90)">
+      <circle cx="-15" cy="-5" r="8" fill="#dc3545"/>
+      <rect x="-20" y="3" width="10" height="15" fill="#dc3545"/>
+      <circle cx="15" cy="0" r="6" fill="#dc3545"/>
+      <rect x="12" y="6" width="6" height="12" fill="#dc3545"/>
+      <!-- Heart -->
+      <path d="M 0 15 C -3 12, -8 12, -8 17 C -8 22, 0 27, 0 27 C 0 27, 8 22, 8 17 C 8 12, 3 12, 0 15 Z" fill="#dc3545"/>
+    </g>
+    
+    <!-- Details -->
+    <g transform="translate(20, 140)">
+      <text x="0" y="20" fill="#333" font-size="14" font-weight="bold">対象者</text>
+      <text x="0" y="35" fill="#666" font-size="12">• 18歳〜26歳の女性</text>
+      <text x="0" y="48" fill="#666" font-size="12">• 保育経験者優遇</text>
+      
+      <text x="0" y="75" fill="#333" font-size="14" font-weight="bold">期間</text>
+      <text x="0" y="90" fill="#666" font-size="12">1年間（延長可能）</text>
+      
+      <text x="0" y="115" fill="#333" font-size="14" font-weight="bold">内容</text>
+      <text x="0" y="130" fill="#666" font-size="12">• ホストファミリー宅で</text>
+      <text x="0" y="143" fill="#666" font-size="12">  チャイルドケア</text>
+      <text x="0" y="156" fill="#666" font-size="12">• 文化交流・語学習得</text>
+      
+      <text x="0" y="185" fill="#333" font-size="14" font-weight="bold">メリット</text>
+      <text x="0" y="200" fill="#666" font-size="12">• 往復航空券無料</text>
+      <text x="0" y="213" fill="#666" font-size="12">• 滞在費・食費無料</text>
+      <text x="0" y="226" fill="#666" font-size="12">• 学費補助あり</text>
+      <text x="0" y="239" fill="#666" font-size="12">• 週給支給</text>
+      
+      <text x="0" y="268" fill="#333" font-size="14" font-weight="bold">費用</text>
+      <text x="0" y="283" fill="#dc3545" font-size="12" font-weight="bold">実質負担ほぼゼロ</text>
+      <text x="0" y="296" fill="#666" font-size="12">プログラム費用のみ</text>
+      
+      <text x="0" y="325" fill="#333" font-size="14" font-weight="bold">福利厚生活用例</text>
+      <text x="0" y="340" fill="#666" font-size="11">保育士のキャリア形成</text>
+      <text x="0" y="353" fill="#666" font-size="11">リフレッシュ研修</text>
+    </g>
+  </g>
+  
+  <!-- Work & Travel Card -->
+  <g transform="translate(670, 100)">
+    <rect x="0" y="0" width="280" height="520" fill="white" stroke="#6f42c1" stroke-width="3" rx="12" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="280" height="60" fill="url(#worktravelGradient)" rx="12"/>
+    <rect x="0" y="48" width="280" height="12" fill="url(#worktravelGradient)"/>
+    
+    <text x="140" y="35" text-anchor="middle" fill="white" font-size="18" font-weight="bold">ワークトラベル</text>
+    
+    <!-- Icon -->
+    <g transform="translate(140, 90)">
+      <rect x="-20" y="-8" width="40" height="16" fill="#6f42c1" rx="3"/>
+      <circle cx="-10" cy="0" r="4" fill="white"/>
+      <circle cx="10" cy="0" r="4" fill="white"/>
+      <rect x="-15" y="8" width="30" height="8" fill="#6f42c1" rx="2"/>
+      <!-- Passport -->
+      <rect x="25" y="-10" width="12" height="16" fill="#6f42c1" rx="2"/>
+      <rect x="27" y="-8" width="8" height="3" fill="white"/>
+      <rect x="27" y="-4" width="6" height="2" fill="white"/>
+      <rect x="27" y="-1" width="7" height="2" fill="white"/>
+    </g>
+    
+    <!-- Details -->
+    <g transform="translate(20, 140)">
+      <text x="0" y="20" fill="#333" font-size="14" font-weight="bold">対象者</text>
+      <text x="0" y="35" fill="#666" font-size="12">• 大学生・大学院生</text>
+      <text x="0" y="48" fill="#666" font-size="12">• 春・夏休み活用</text>
+      
+      <text x="0" y="75" fill="#333" font-size="14" font-weight="bold">期間</text>
+      <text x="0" y="90" fill="#666" font-size="12">約6週間</text>
+      
+      <text x="0" y="115" fill="#333" font-size="14" font-weight="bold">内容</text>
+      <text x="0" y="130" fill="#666" font-size="12">• リゾート・観光地での</text>
+      <text x="0" y="143" fill="#666" font-size="12">  アルバイト</text>
+      <text x="0" y="156" fill="#666" font-size="12">• 多国籍環境での就業</text>
+      
+      <text x="0" y="185" fill="#333" font-size="14" font-weight="bold">メリット</text>
+      <text x="0" y="200" fill="#666" font-size="12">• 短期間で実現可能</text>
+      <text x="0" y="213" fill="#666" font-size="12">• 異文化理解促進</text>
+      <text x="0" y="226" fill="#666" font-size="12">• 語学力向上</text>
+      <text x="0" y="239" fill="#666" font-size="12">• 就業収入あり</text>
+      
+      <text x="0" y="268" fill="#333" font-size="14" font-weight="bold">費用</text>
+      <text x="0" y="283" fill="#666" font-size="12">プログラム費用</text>
+      <text x="0" y="296" fill="#666" font-size="12">往復航空券・滞在費</text>
+      
+      <text x="0" y="325" fill="#333" font-size="14" font-weight="bold">単位認定・奨学金</text>
+      <text x="0" y="340" fill="#666" font-size="11">慶應、法政、東洋</text>
+      <text x="0" y="353" fill="#666" font-size="11">津田塾、麗澤　他</text>
+    </g>
+  </g>
+  
+  <!-- Comparison footer -->
+  <g transform="translate(50, 640)">
+    <rect x="0" y="0" width="900" height="40" fill="#e3f2fd" stroke="#007bff" stroke-width="2" rx="8"/>
+    <text x="450" y="25" text-anchor="middle" fill="#007bff" font-size="14" font-weight="bold">🔍 詳しい情報やご相談は、お気軽にお問い合わせください</text>
+  </g>
+</svg>
