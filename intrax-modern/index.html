@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>法人・学校の方へ | Intrax - 信頼性の高いJ1ビザプログラム</title>
+    <meta name="description" content="米国国務省認可のJ1ビザプログラム。企業のグローバル化支援と学生の国際交流を推進。信頼性と実績で選ばれるIntrax。">
+    <link href="./dist/output.css?v=2.0" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CDN Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 font-['Noto_Sans_JP']">
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 w-full h-full -z-10"></canvas>
+    
+    <!-- Professional Header -->
+    <header class="bg-white/95 backdrop-blur-xl shadow-lg border-b border-slate-200/50 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center">
+                    <div class="relative group">
+                        <img src="../assets/images/intrax-logo.png" alt="Intrax" class="h-14 w-auto transition-all duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-slate-700 rounded-xl opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="ml-4 hidden lg:block">
+                        <div class="text-sm text-slate-600 font-medium">米国国務省認可</div>
+                        <div class="text-xs text-slate-500">J-1ビザスポンサー</div>
+                    </div>
+                </div>
+                <nav class="hidden xl:flex space-x-1">
+                    <button class="nav-btn-professional active" data-tab="tab1">
+                        <span class="nav-btn-content">J1ビザとは</span>
+                    </button>
+                    <button class="nav-btn-professional" data-tab="tab2">
+                        <span class="nav-btn-content">アメリカ駐在</span>
+                    </button>
+                    <button class="nav-btn-professional" data-tab="tab3">
+                        <span class="nav-btn-content">福利厚生活用</span>
+                    </button>
+                    <button class="nav-btn-professional school-nav-btn" data-tab="tab4">
+                        <span class="nav-icon">🎓</span>
+                        <span class="nav-btn-content">学校向け</span>
+                    </button>
+                    <a href="contact.html" class="nav-btn-professional contact-nav-btn">
+                        <span class="nav-icon">📧</span>
+                        <span class="nav-btn-content">お問い合わせ</span>
+                    </a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <a href="contact.html" class="hidden md:inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-slate-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        お問い合わせ
+                    </a>
+                    <button class="mobile-menu-btn xl:hidden p-3 rounded-lg bg-slate-100 hover:bg-slate-200 transition-colors duration-200">
+                        <svg class="h-6 w-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 lg:px-8 py-16 relative">
+        <!-- Tab 1: J1ビザとは -->
+        <div id="tab1" class="tab-content active">
+            <div class="text-center mb-20">
+                <div class="mb-8">
+                    <div class="inline-flex items-center px-4 py-2 bg-blue-50 text-blue-700 text-sm font-medium rounded-full border border-blue-200 mb-6">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        米国国務省認可
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-slate-800 mb-6 leading-tight">
+                        J1ビザとは
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-medium">
+                        教育・文化・就業研修を目的とした<br class="hidden md:block">信頼性の高い交流訪問者ビザ
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-20">
+                <div class="card-professional">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h4z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="card-title">企業のグローバル化支援</h2>
+                    </div>
+                    <p class="card-content">グローバル化が進む現代、企業の競争力強化には社員の語学力・異文化理解力の向上が不可欠です。J1ビザを活用すれば、社員を最長18ケ月間、アメリカに派遣することが可能となります。</p>
+                </div>
+
+                <div class="card-professional">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="card-title">包括的福利厚生の実現</h2>
+                    </div>
+                    <p class="card-content">さらに、社員本人だけでなく家族の成長を支援する包括的福利厚生は、社員満足度（ES）向上に大きく寄与します。企業の社会的責任（CSR）としても高く評価されます。</p>
+                </div>
+            </div>
+
+            <div class="card-professional mb-20">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">米国国務省認可の信頼性</h2>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto">J-1ビザはアメリカ合衆国の交流訪問者ビザです。J-1プログラムの管理監督官庁は、米国国務省（U.S. Department of State）であり、スポンサー団体の認定・監査を行い、安全で質の高い交流プログラムを維持しています。</p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-100">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">8つの分野でのJ-1スポンサー資格</h3>
+                        <p class="text-slate-600">幅広い年齢層と目的に対応する包括的なプログラム</p>
+                    </div>
+                    <div id="programs-container" class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <!-- Programs will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 2: J1ビザでアメリカ駐在 -->
+        <div id="tab2" class="tab-content hidden">
+            <div class="text-center mb-20">
+                <div class="mb-8">
+                    <div class="inline-flex items-center px-4 py-2 bg-green-50 text-green-700 text-sm font-medium rounded-full border border-green-200 mb-6">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                        </svg>
+                        実績豊富
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-slate-800 mb-6 leading-tight">
+                        J1ビザでアメリカ駐在
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-medium">
+                        企業のグローバル化を支援する<br class="hidden md:block">実績豊富な駐在プログラム
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-professional">
+                <div class="mb-8">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6">企業からの派遣実績（一例）</h2>
+                    <div class="bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl p-6 border border-slate-200">
+                        <div id="companies-container" class="flex flex-wrap gap-3 mb-6">
+                            <!-- Company tags will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="link-card-professional">
+                        <div class="link-card-header">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h4z"></path>
+                            </svg>
+                            <h3 class="text-lg font-semibold text-slate-800">インターンシップ詳細</h3>
+                        </div>
+                        <a href="https://www.intraxjp.com/internships/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700 underline font-medium">
+                            https://www.intraxjp.com/internships/
+                        </a>
+                    </div>
+                    
+                    <div class="link-card-professional">
+                        <div class="link-card-header">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                            <h3 class="text-lg font-semibold text-slate-800">研究者派遣</h3>
+                        </div>
+                        <a href="https://www.intraxjp.com/research-scholar/" target="_blank" rel="noopener" class="text-green-600 hover:text-green-700 underline font-medium">
+                            https://www.intraxjp.com/research-scholar/
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 3: 福利厚生に活用できるJ1プログラム -->
+        <div id="tab3" class="tab-content hidden">
+            <div class="text-center mb-20">
+                <div class="mb-8">
+                    <div class="inline-flex items-center px-4 py-2 bg-purple-50 text-purple-700 text-sm font-medium rounded-full border border-purple-200 mb-6">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                        </svg>
+                        福利厚生
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-slate-800 mb-6 leading-tight">
+                        福利厚生に活用できる<br class="hidden md:block">J1プログラム
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-medium">
+                        社員満足度向上を実現する<br class="hidden md:block">包括的な福利厚生施策
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-16">
+                <div class="card-professional">
+                    <div class="card-header">
+                        <div class="card-icon bg-blue-100 text-blue-600">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">オペアケア（18歳～26歳の女性）</h3>
+                    </div>
+                    <p class="card-content mb-6">オペアケアは米国国務省認定の有給チャイルドケアです。米国国務省の規定を満たしたホストファミリー宅に滞在します。</p>
+                    
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border-l-4 border-blue-400 mb-6">
+                        <h4 class="font-semibold text-slate-800 mb-3 text-lg">企業向けの福利厚生施策例</h4>
+                        <ul class="text-slate-700 space-y-2">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                子育て中の女性社員のキャリア継続支援
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                育児休業後の復職支援
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                ワークライフバランスの向上
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-card-professional">
+                        <div class="link-card-header">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            <h4 class="font-semibold text-slate-800">オペアケア詳細サイト</h4>
+                        </div>
+                        <a href="https://aupaircare.intraxjp.com/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700 underline font-medium">
+                            https://aupaircare.intraxjp.com/
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-professional">
+                    <div class="card-header">
+                        <div class="card-icon bg-green-100 text-green-600">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">ワークトラベル（大学生・院生）</h3>
+                    </div>
+                    <p class="card-content mb-6">ワークトラベルは、大学生や大学院生が春休みや夏休みの期間を利用してアメリカでアルバイトができるプログラムです。</p>
+                    
+                    <div class="link-card-professional">
+                        <div class="link-card-header">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
+                            <h4 class="font-semibold text-slate-800">ワークトラベル詳細サイト</h4>
+                        </div>
+                        <a href="https://worktravel.intraxjp.com/" target="_blank" rel="noopener" class="text-green-600 hover:text-green-700 underline font-medium">
+                            https://worktravel.intraxjp.com/
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div class="inline-block bg-white/80 backdrop-blur-sm px-8 py-6 rounded-2xl shadow-lg border border-slate-200">
+                    <p class="text-xl font-medium text-slate-700">
+                        その他のプログラムについてもお気軽にお問合せください。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: 学校の方へ -->
+        <div id="tab4" class="tab-content hidden">
+            <div class="text-center mb-20">
+                <div class="mb-8">
+                    <div class="inline-flex items-center px-4 py-2 bg-amber-50 text-amber-700 text-sm font-medium rounded-full border border-amber-200 mb-6">
+                        <span class="text-2xl mr-2">🎓</span>
+                        教育機関向け
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-slate-800 mb-6 leading-tight">
+                        学校の方へ
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-medium">
+                        学生のグローバルな成長を支援する<br class="hidden md:block">信頼性の高い教育機関向けプログラム
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-professional mb-20">
+                <div class="card-header">
+                    <div class="card-icon bg-amber-100 text-amber-600">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h2 class="card-title">イントラックスについて</h2>
+                </div>
+                <p class="card-content">イントラックスは、米国国務省認可のJ-1ビザのスポンサーとして、教育・文化・職業研修のための短期滞在を認めるビザプログラムを運営しています。J-1プログラムの意義は、国際交流と相互理解の促進、実践的な学びと経験の提供、将来のグローバル人材育成にあります。</p>
+            </div>
+
+            <div class="card-professional">
+                <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-100">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">8つの分野でのJ-1スポンサー資格</h3>
+                        <p class="text-slate-600 mb-6">幅広い年齢層と目的に対応する包括的なプログラム</p>
+                        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                            <!-- Programs will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 text-white mt-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-slate-600/5"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="../assets/images/intrax-logo.png" alt="Intrax" class="h-12 w-auto mr-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Intrax</h3>
+                            <p class="text-slate-300 text-sm">米国国務省認可 J-1ビザスポンサー</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300 text-lg leading-relaxed max-w-md">
+                        グローバル人材育成を支援するJ-1ビザプログラム。企業の国際化と学生の国際交流を推進し、相互理解と平和な世界の実現に貢献します。
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">プログラム</h4>
+                    <ul class="space-y-3 text-slate-300">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300 flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                            インターンシップ
+                        </a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300 flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                            オペアケア
+                        </a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300 flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                            ワークトラベル
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-6">お問い合わせ</h4>
+                    <p class="text-slate-300 text-lg mb-4">プログラムについてのご相談はお気軽に</p>
+                    <a href="contact.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-slate-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        お問い合わせ
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700 mt-16 pt-8 text-center">
+                <p class="text-slate-300 text-lg">&copy; 2024 Intrax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <button id="scroll-top-btn" class="scroll-top-btn-professional hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script type="module" src="./dist/main.js?v=2.0"></script>
+</body>
+</html>

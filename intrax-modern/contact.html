@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | Intrax - Modern Version</title>
+    <meta name="description" content="J1ビザプログラムに関するお問い合わせはこちら。法人・個人問わずお気軽にご相談ください。専門スタッフが丁寧にサポートいたします。">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="../assets/images/intrax-logo.png" alt="Intrax" class="h-10 w-auto">
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900 font-medium">ホーム</a>
+                    <a href="index.html#tab1" class="text-gray-600 hover:text-gray-900 font-medium">J1ビザとは</a>
+                    <a href="index.html#tab2" class="text-gray-600 hover:text-gray-900 font-medium">アメリカ駐在</a>
+                    <a href="index.html#tab3" class="text-gray-600 hover:text-gray-900 font-medium">福利厚生</a>
+                    <a href="index.html#tab4" class="text-gray-600 hover:text-gray-900 font-medium">学校の方へ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">お問い合わせ</h1>
+            <p class="text-xl text-gray-600">J1ビザプログラムについて、お気軽にご相談ください</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">お問い合わせフォーム</h2>
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">お名前 *</label>
+                        <input type="text" id="name" name="name" required 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-intrax-blue focus:border-transparent">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">メールアドレス *</label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-intrax-blue focus:border-transparent">
+                    </div>
+
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gray-700 mb-2">会社名・学校名</label>
+                        <input type="text" id="company" name="company" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-intrax-blue focus:border-transparent">
+                    </div>
+
+                    <div>
+                        <label for="program" class="block text-sm font-medium text-gray-700 mb-2">興味のあるプログラム</label>
+                        <select id="program" name="program" 
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-intrax-blue focus:border-transparent">
+                            <option value="">選択してください</option>
+                            <option value="internship">インターンシップ</option>
+                            <option value="trainee">職業訓練</option>
+                            <option value="aupair">オペアケア</option>
+                            <option value="worktravel">ワークトラベル</option>
+                            <option value="teacher">教師交流</option>
+                            <option value="research">研究者派遣</option>
+                            <option value="highschool">高校交換留学</option>
+                            <option value="camp">キャンプカウンセラー</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">お問い合わせ内容 *</label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-intrax-blue focus:border-transparent"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary w-full py-3 text-lg">
+                        送信する
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-8">
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">お問い合わせ先</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-700">Intrax Japan</h4>
+                            <p class="text-gray-600">J-1ビザプログラム専門スタッフ</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-700">対応時間</h4>
+                            <p class="text-gray-600">平日 9:00-18:00（日本時間）</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">よくある質問</h3>
+                    <div class="space-y-4">
+                        <details class="group">
+                            <summary class="flex justify-between items-center font-medium text-gray-700 cursor-pointer list-none">
+                                <span>J-1ビザの取得期間はどのくらいですか？</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="text-gray-600 mt-3">プログラムによって異なりますが、通常3ヶ月から18ヶ月の期間で取得可能です。</p>
+                        </details>
+
+                        <details class="group">
+                            <summary class="flex justify-between items-center font-medium text-gray-700 cursor-pointer list-none">
+                                <span>英語力はどの程度必要ですか？</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="text-gray-600 mt-3">プログラムによって異なりますが、基本的な日常会話レベルの英語力が必要です。</p>
+                        </details>
+
+                        <details class="group">
+                            <summary class="flex justify-between items-center font-medium text-gray-700 cursor-pointer list-none">
+                                <span>費用はどのくらいかかりますか？</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="text-gray-600 mt-3">プログラム内容や期間によって異なります。詳細はお問い合わせください。</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="card bg-blue-50 border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">緊急のお問い合わせ</h3>
+                    <p class="text-blue-700 mb-4">緊急の場合は、以下の方法でもお問い合わせいただけます。</p>
+                    <div class="space-y-2">
+                        <p class="text-blue-700"><strong>電話：</strong>03-XXXX-XXXX</p>
+                        <p class="text-blue-700"><strong>緊急時：</strong>080-XXXX-XXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Intrax</h3>
+                    <p class="text-gray-300">グローバル人材育成を支援するJ-1ビザプログラム</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">プログラム</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="index.html#tab1" class="hover:text-white">インターンシップ</a></li>
+                        <li><a href="index.html#tab3" class="hover:text-white">オペアケア</a></li>
+                        <li><a href="index.html#tab3" class="hover:text-white">ワークトラベル</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">お問い合わせ</h3>
+                    <p class="text-gray-300">プログラムについてのご相談はお気軽に</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Intrax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./dist/contact.js"></script>
+</body>
+</html>

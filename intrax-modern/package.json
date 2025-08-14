@@ -1,0 +1,26 @@
+{
+  "name": "intrax-modern",
+  "version": "1.0.0",
+  "description": "Intrax Corporate & Schools - Modern TypeScript + Tailwind CSS Version",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:css && npm run build:ts",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build:ts": "npx tsc",
+    "build:watch": "npm run build:css:watch & npm run build:ts:watch",
+    "build:css:watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build:ts:watch": "npx tsc --watch",
+    "dev": "npm run build && npx serve .",
+    "start": "npx serve .",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["intrax", "j1-visa", "work-travel", "au-pair", "corporate", "typescript", "tailwind"],
+  "author": "Intrax",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
