@@ -3,616 +3,676 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ | Intrax</title>
+    <title>お問い合わせ | Intrax - Modern Version</title>
     <meta name="description" content="J1ビザプログラムに関するお問い合わせはこちら。法人・個人問わずお気軽にご相談ください。専門スタッフが丁寧にサポートいたします。">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="assets/images/intrax-logo.png" alt="Intrax">
-            </div>
-            <nav class="global-nav">
-                <ul>
-                    <li><a href="../reason/">Reason</a></li>
-                    <li><a href="../service/">Service</a></li>
-                    <li><a href="../company/">Company</a></li>
-                    <li><a href="../recruit/">Recruit</a></li>
-                    <li><a href="../j1-visa/">J1 Visa / Corporate Clients</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>お問い合わせ</h1>
-                <p class="hero-subtitle">アメリカ駐在におけるJ1ビザの活用について詳しく知りたい方は、どうぞお気軽にお問い合わせください。</p>
-            </div>
-        </section>
-
-        <section class="contact-info-section">
-            <div class="container">
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <div class="method-icon">P</div>
-                        <h3>お電話でのお問い合わせ</h3>
-                        <p class="phone-number">03-3434-2729</p>
-                        <p class="hours">受付時間：平日 9:00〜17:30</p>
-                    </div>
-                    <div class="contact-method">
-                        <div class="method-icon">M</div>
-                        <h3>メールでのお問い合わせ</h3>
-                        <p>下記フォームまたは直接メールにて</p>
-                        <p class="email">Eメール：<a href="mailto:intrax@intraxjp.com">intrax@intraxjp.com</a></p>
-                    </div>
-                    <div class="contact-method">
-                        <div class="method-icon">O</div>
-                        <h3>オフィス所在地</h3>
-                        <p>〒105-0022<br>東京都港区海岸1-9-11<br>マリンクスタワー7F</p>
-                        <a href="#" class="btn btn-outline">アクセスマップ</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-form-section">
-            <div class="container">
-                <div class="form-header">
-                    <h2>お問い合わせフォーム</h2>
-                    <p>以下のフォームにご記入いただき、送信ボタンを押してください。<br>
-                    通常1〜2営業日以内にご回答いたします。</p>
-                </div>
-
-                <form class="contact-form" action="#" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="inquiry-type">お問い合わせ種別 <span class="required">*</span></label>
-                            <select id="inquiry-type" name="inquiry-type" required>
-                                <option value="">選択してください</option>
-                                <option value="corporate">法人・企業からのお問い合わせ</option>
-                                <option value="individual">個人からのお問い合わせ</option>
-                                <option value="program-info">プログラム詳細について</option>
-                                <option value="application">申請手続きについて</option>
-                                <option value="other">その他</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="program-interest">ご興味のあるプログラム</label>
-                            <select id="program-interest" name="program-interest">
-                                <option value="">選択してください</option>
-                                <option value="internship">インターンシップ</option>
-                                <option value="trainee">トレーニー</option>
-                                <option value="aupair">オペアケア</option>
-                                <option value="worktravel">ワークトラベル</option>
-                                <option value="research">研究者派遣</option>
-                                <option value="teacher">教師交流</option>
-                                <option value="highschool">高校交換留学</option>
-                                <option value="camp">キャンプカウンセラー</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="organization">組織・会社名</label>
-                            <input type="text" id="organization" name="organization" placeholder="株式会社○○">
-                        </div>
-                        <div class="form-group">
-                            <label for="department">部署名</label>
-                            <input type="text" id="department" name="department" placeholder="人事部">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">お名前 <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" required placeholder="山田太郎">
-                        </div>
-                        <div class="form-group">
-                            <label for="name-kana">お名前（フリガナ）</label>
-                            <input type="text" id="name-kana" name="name-kana" placeholder="ヤマダタロウ">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="email">メールアドレス <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" required placeholder="example@company.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">電話番号</label>
-                            <input type="tel" id="phone" name="phone" placeholder="03-0000-0000">
-                        </div>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="participants">参加予定人数・時期</label>
-                        <input type="text" id="participants" name="participants" placeholder="例：5名、2024年夏頃">
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label for="message">お問い合わせ内容 <span class="required">*</span></label>
-                        <textarea id="message" name="message" required rows="6" placeholder="具体的なご質問やご要望をお聞かせください。"></textarea>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="privacy-agreement" required>
-                            <span class="checkmark"></span>
-                            <a href="#" target="_blank">プライバシーポリシー</a>に同意します <span class="required">*</span>
-                        </label>
-                    </div>
-
-                    <div class="form-group full-width">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="newsletter">
-                            <span class="checkmark"></span>
-                            Intraxからの最新情報やプログラム案内を受け取る
-                        </label>
-                    </div>
-
-                    <div class="form-submit">
-                        <button type="submit" class="btn btn-primary btn-large">送信する</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <div class="container">
-                <h2>よくあるご質問</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>Q. 申請にはどのくらいの期間がかかりますか？</h3>
-                        <p>A. 申請から承認まで通常1-2ヶ月、その後米国大使館でのビザ面接まで2-4週間程度です。</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Q. 企業として複数名を派遣することは可能ですか？</h3>
-                        <p>A. はい、可能です。企業様向けのグループ割引制度もございます。詳しくはお問い合わせください。</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Q. 英語力の要件はありますか？</h3>
-                        <p>A. プログラムにより異なりますが、基本的な英語コミュニケーション能力が必要です。</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Q. 滞在中のサポート体制は？</h3>
-                        <p>A. 24時間緊急時対応、現地オリエンテーション、定期的なチェックインなど充実したサポートを提供します。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/images/intrax-logo.png" alt="Intrax">
-                </div>
-                <div class="footer-info">
-                    <p>〒105-0022 東京都港区海岸1-9-11マリンクスタワー7F</p>
-                    <p>電話: 03-3434-2729</p>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="../access/">アクセスマップ</a></li>
-                        <li><a href="../privacy/">プライバシーポリシー</a></li>
-                        <li><a href="../corporate/">法人のお客様</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <p>&copy; 2024 Intrax. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
+        /* Modern Tailwind-inspired CSS */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 30%, #f1f5f9 100%);
+            min-height: 100vh;
             line-height: 1.6;
-            color: #333;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
+        
+        /* Header Styles */
         header {
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.5);
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 50;
         }
-
+        
         .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 1.5rem 0;
         }
-
-        .logo img {
-            height: 40px;
-        }
-
-        .global-nav ul {
+        
+        .logo-section {
             display: flex;
-            list-style: none;
-            gap: 2rem;
+            align-items: center;
         }
-
-        .global-nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .global-nav a:hover,
-        .global-nav a.active {
-            color: #2c5530;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #2c5530 0%, #1e4a72 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero-subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .contact-info-section {
-            padding: 3rem 0;
-            background: #f8f9fa;
-        }
-
-        .contact-methods {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .contact-method {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .method-icon {
-            width: 3rem;
-            height: 3rem;
-            margin-bottom: 1rem;
+        
+        .logo {
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #2c5530;
-            color: white;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 auto 1rem auto;
+            transition: all 0.3s ease;
+            margin-right: 1rem;
         }
-
-        .contact-method h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: #2c5530;
+        
+        .logo:hover {
+            transform: scale(1.05);
         }
-
-        .phone-number {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2c5530;
-            margin-bottom: 0.5rem;
+        
+        .main-navigation {
+            display: none;
         }
-
-        .email {
-            font-size: 1.1rem;
-            color: #2c5530;
+        
+        @media (min-width: 1280px) {
+            .main-navigation {
+                display: flex;
+                gap: 0.25rem;
+            }
+        }
+        
+        .nav-btn-professional {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #e2e8f0;
+            color: #475569;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
             font-weight: 500;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .hours {
-            font-size: 0.9rem;
-            color: #666;
+        .nav-btn-professional:hover,
+        .nav-btn-professional.active {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            border-color: #2563eb;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
         }
 
-        .contact-form-section {
-            padding: 3rem 0;
+        .school-nav-btn {
+            background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+            color: white !important;
+            border-color: #f59e0b !important;
         }
 
-        .form-header {
+        .school-nav-btn:hover {
+            background: linear-gradient(135deg, #d97706, #b45309) !important;
+            border-color: #d97706 !important;
+        }
+
+        .mobile-menu-btn {
+            display: block;
+            padding: 0.75rem;
+            border-radius: 8px;
+            background: #f1f5f9;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        @media (min-width: 1280px) {
+            .mobile-menu-btn {
+                display: none;
+            }
+        }
+
+        .mobile-menu-btn:hover {
+            background: #e2e8f0;
+        }
+
+        .contact-button {
+            display: none;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .contact-button {
+                display: flex;
+            }
+        }
+
+        .contact-button:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+        
+        /* Main content styles */
+        .main-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .page-header {
             text-align: center;
             margin-bottom: 3rem;
         }
-
-        .form-header h2 {
-            font-size: 1.8rem;
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e293b;
             margin-bottom: 1rem;
-            color: #2c5530;
         }
-
-        .contact-form {
-            max-width: 800px;
-            margin: 0 auto;
+        
+        .page-subtitle {
+            font-size: 1.25rem;
+            color: #64748b;
         }
-
-        .form-row {
+        
+        .content-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        
+        @media (min-width: 1024px) {
+            .content-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(226, 232, 240, 0.5);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+        
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
             margin-bottom: 1.5rem;
         }
-
+        
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
         .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group.full-width {
-            grid-column: 1 / -1;
-        }
-
-        .form-row .form-group.full-width {
             margin-bottom: 1.5rem;
         }
-
-        label {
+        
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
             font-weight: 500;
+            color: #374151;
             margin-bottom: 0.5rem;
-            color: #333;
         }
-
-        .required {
-            color: #dc3545;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        select,
-        textarea {
+        
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
             padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
             font-size: 1rem;
-            transition: border-color 0.3s;
+            transition: all 0.3s ease;
         }
-
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="tel"]:focus,
-        select:focus,
-        textarea:focus {
+        
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
             outline: none;
-            border-color: #2c5530;
-            box-shadow: 0 0 0 2px rgba(44,85,48,0.25);
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+            color: white;
+            margin-top: 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(100, 116, 139, 0.05) 100%);
+        }
+        
+        .footer-content {
+            position: relative;
+            z-index: 10;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
         }
 
-        textarea {
-            resize: vertical;
-            min-height: 120px;
+        @media (min-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 2fr 1fr 1.5fr;
+            }
         }
-
-        .checkbox-label {
+        
+        @media (min-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 2fr 1fr 1fr;
+            }
+        }
+        
+        .footer-logo {
             display: flex;
             align-items: center;
-            cursor: pointer;
-            margin-bottom: 0;
+            margin-bottom: 1.5rem;
         }
-
-        .checkbox-label input[type="checkbox"] {
-            margin-right: 0.5rem;
-        }
-
-        .form-submit {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 500;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .btn-primary {
-            background: #2c5530;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #1e4a72;
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: #2c5530;
-            border: 2px solid #2c5530;
-        }
-
-        .btn-outline:hover {
-            background: #2c5530;
-            color: white;
-        }
-
-        .btn-large {
-            padding: 15px 40px;
-            font-size: 1.1rem;
-        }
-
-        .faq-section {
-            padding: 3rem 0;
-            background: #f8f9fa;
-        }
-
-        .faq-section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            color: #2c5530;
-        }
-
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-        }
-
-        .faq-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .faq-item h3 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: #2c5530;
-        }
-
-        .faq-item p {
-            line-height: 1.6;
-        }
-
-        footer {
-            background: #2c5530;
-            color: white;
-            padding: 2rem 0 1rem;
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
+        
         .footer-logo img {
-            height: 30px;
-            filter: brightness(0) invert(1);
+            height: 3rem;
+            width: auto;
+            margin-right: 1rem;
         }
-
-        .footer-links ul {
+        
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        
+        .footer-brand p {
+            font-size: 0.875rem;
+            color: #cbd5e1;
+        }
+        
+        .footer-description {
+            color: #cbd5e1;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            max-width: 28rem;
+        }
+        
+        .footer-section h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links {
             list-style: none;
         }
-
-        .footer-links a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s;
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
         }
-
+        
+        .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
         .footer-links a:hover {
+            color: #60a5fa;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #475569;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            text-align: center;
+        }
+        
+        .footer-bottom p {
+            color: #cbd5e1;
+            font-size: 1.125rem;
+        }
+        
+        /* FAQ Styles */
+        details {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        
+        summary {
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        details[open] summary {
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info h4 {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info p {
+            color: #6b7280;
+        }
+        
+        .emergency-contact {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        
+        .emergency-contact h3 {
+            color: #1e40af;
+            margin-bottom: 1rem;
+        }
+        
+        .emergency-contact p {
+            color: #1d4ed8;
+            margin-bottom: 1rem;
+        }
+        
+        .emergency-contact .contact-item {
+            color: #1d4ed8;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            border-color: #2563eb;
             color: white;
         }
-
-        .footer-copyright {
-            border-top: 1px solid #555;
-            padding-top: 1rem;
-            text-align: center;
-            color: #ccc;
+        
+        .contact-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+            border-color: #1d4ed8;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
         }
-
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .global-nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 1rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .contact-methods {
-                grid-template-columns: 1fr;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
+        
+        .footer-cta {
+            text-align: center;
+        }
+        
+        .footer-cta p {
+            color: #cbd5e1;
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
         }
     </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/intrax-logo.png" alt="Intrax" style="height: 40px; width: auto;">
+                        <span style="margin-left: 10px; font-size: 14px; color: #374151; font-weight: 500;">法人・学校の方へ</span>
+                    </a>
+                </div>
+                <nav class="main-navigation">
+                    <button class="nav-btn-professional" onclick="window.location.href='index.html#tab1'">
+                        <span>J1ビザとは</span>
+                    </button>
+                    <button class="nav-btn-professional" onclick="window.location.href='index.html#tab2'">
+                        <span>J1ビザでアメリカ駐在</span>
+                    </button>
+                    <button class="nav-btn-professional" onclick="window.location.href='index.html#tab3'">
+                        <span>福利厚生に活用できるJ1プログラム</span>
+                    </button>
+                    <button class="nav-btn-professional school-nav-btn" onclick="window.location.href='index.html#tab4'">
+                        <span>🎓 学校の方へ</span>
+                    </button>
+                </nav>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <a href="contact.html" class="contact-button">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        お問い合わせ
+                    </a>
+                    <button class="mobile-menu-btn">
+                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">お問い合わせ</h1>
+            <p class="page-subtitle">J1ビザプログラムについて、お気軽にご相談ください</p>
+        </div>
+
+        <div class="content-grid">
+            <!-- Contact Form -->
+            <div class="card">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">お問い合わせフォーム</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">お名前 *</label>
+                        <input type="text" id="name" name="name" required class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">メールアドレス *</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company" class="form-label">会社名・学校名</label>
+                        <input type="text" id="company" name="company" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="program" class="form-label">興味のあるプログラム</label>
+                        <select id="program" name="program" class="form-select">
+                            <option value="">選択してください</option>
+                            <option value="internship">インターンシップ</option>
+                            <option value="trainee">職業訓練</option>
+                            <option value="aupair">オペアケア</option>
+                            <option value="worktravel">ワークトラベル</option>
+                            <option value="teacher">教師交流</option>
+                            <option value="research">研究者派遣</option>
+                            <option value="highschool">高校交換留学</option>
+                            <option value="camp">キャンプカウンセラー</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">お問い合わせ内容 *</label>
+                        <textarea id="message" name="message" rows="5" required class="form-textarea"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 1rem; font-size: 1.125rem;">
+                        送信する
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <div class="card">
+                    <h3>よくある質問</h3>
+                    <details>
+                        <summary>
+                            <span>J-1ビザの取得期間はどのくらいですか？</span>
+                            <span>▼</span>
+                        </summary>
+                        <p>プログラムによって異なりますが、通常3ヶ月から18ヶ月の期間で取得可能です。</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <span>英語力はどの程度必要ですか？</span>
+                            <span>▼</span>
+                        </summary>
+                        <p>プログラムによって異なりますが、基本的な日常会話レベルの英語力が必要です。</p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <span>費用はどのくらいかかりますか？</span>
+                            <span>▼</span>
+                        </summary>
+                        <p>プログラム内容や期間によって異なります。詳細はお問い合わせください。</p>
+                    </details>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <img src="assets/images/intrax-logo.png" alt="Intrax" style="height: 3rem; width: auto; filter: brightness(0) invert(1);">
+                        <div class="footer-brand">
+                            <p>米国国務省認可<br>J-1ビザスポンサー</p>
+                            <p style="font-size: 14px; color: #d1d5db; margin-top: 4px;">法人・学校の方へ</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        グローバル人材育成を支援するJ-1ビザプログラム。企業の国際化と学生の国際交流を推進し、相互理解と平和な世界の実現に貢献します。
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>プログラム</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                            インターンシップ
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                            オペアケア
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                            ワークトラベル
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-cta" style="text-align: left;">
+                    <h4>お問い合わせ</h4>
+                    <p style="margin-bottom: 1.5rem;">アメリカ駐在におけるJ1ビザの活用について詳しく知りたい方は、どうぞお気軽にお問い合わせください。</p>
+
+                    <div style="text-align: left; margin-bottom: 1.5rem;">
+                        <p style="margin-bottom: 0.5rem; color: #cbd5e1;"><strong>電話:</strong> 03-3434-2729（平日10時～18時30分）</p>
+                        <p style="margin-bottom: 1rem; color: #cbd5e1;"><strong>Eメール:</strong> <a href="mailto:intrax@intraxjp.com" style="color: #60a5fa; text-decoration: none;">intrax@intraxjp.com</a></p>
+                    </div>
+
+                    <a href="contact.html" class="footer-btn">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        お問い合わせフォーム
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Intrax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        // Form validation and submission
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('.contact-form');
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Simple validation
-                const requiredFields = form.querySelectorAll('[required]');
-                let isValid = true;
-                
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        isValid = false;
-                        field.style.borderColor = '#dc3545';
-                    } else {
-                        field.style.borderColor = '#ddd';
-                    }
-                });
-                
-                if (isValid) {
-                    // In a real application, you would send the data to a server
-                    alert('お問い合わせを受け付けました。1〜2営業日以内にご連絡いたします。');
-                    form.reset();
-                } else {
-                    alert('必須項目をすべて入力してください。');
-                }
-            });
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('お問い合わせありがとうございます。担当者より3営業日以内にご連絡いたします。');
         });
     </script>
 </body>
