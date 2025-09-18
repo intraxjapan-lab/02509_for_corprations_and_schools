@@ -2,16 +2,13 @@
   "name": "intrax-corporations-schools",
   "version": "1.0.0",
   "description": "企業・学校向けIntraxプログラム紹介サイト",
-  "main": "corporations-and-schools.html",
+  "main": "index.html",
   "scripts": {
+    "build": "echo 'Static deployment - no build needed'",
     "dev": "npx serve .",
-    "build": "echo 'No build required'",
     "start": "npx serve ."
   },
   "keywords": ["intrax", "j1-visa", "work-travel", "au-pair", "corporate"],
   "author": "Intrax",
-  "license": "MIT",
-  "devDependencies": {
-    "serve": "^14.0.0"
-  }
+  "license": "MIT"
 }
